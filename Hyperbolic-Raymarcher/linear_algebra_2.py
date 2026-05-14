@@ -5,7 +5,7 @@ def lorentzian_inner_product(p, q):
 
 def rotation_matrix_4d(axis1, axis2, theta):
     R = np.eye(4)
-    c, s = np.cos(theta), np.sin(theta)
+    c, s = np.cosh(theta), np.sinh(theta)
     R[axis1, axis1] = c
     R[axis2, axis2] = c
     R[axis1, axis2] = -s
